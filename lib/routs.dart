@@ -12,7 +12,7 @@ final Map<String, WidgetBuilder> appRoutes = {
 
   'home': (context) => const Home(),
   'firstScreen': (context) => const FirstScreen(),
-  'secondScreen': (context) => const SecondScreen(),
+  'SecondScreen': (context) => const SecondScreen(),
   'thirdScreen': (context) => const ThirdScreen(),
   'homeScreen': (context) => const HomeScreen(),
 };
