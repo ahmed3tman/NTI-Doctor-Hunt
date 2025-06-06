@@ -52,7 +52,9 @@ class FirstScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: height * 0.06),
-                  ButtonModel(text: "Get Started", route: "SecondScreen"),
+                  ButtonModel(text: "Get Started", onPressed: () { 
+                    Navigator.pushReplacementNamed(context, 'SecondScreen');
+                   },),
                   SizedBox(height: height * 0.02),
                   TextButtonModel(route: 'homeScreen', text: "Skip"),
                 ],

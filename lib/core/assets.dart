@@ -5,6 +5,15 @@ class myImages {
   static const String doc2 = 'assets/images/doc2.png';
   static const String doc3 = 'assets/images/doc3.png';
   static const String doc4 = 'assets/images/doc4.png';
+  static const String docv1 = 'assets/images/docv1.png';
+  static const String docv2 = 'assets/images/docv2.png';
+  static const String docv3 = 'assets/images/docv3.png';
   static const String green1 = 'assets/images/green1.png';
   static const String green2 = 'assets/images/green2.png';
+    static const String icon1 = 'assets/images/icon1.png';
+    static const String icon2 = 'assets/images/icon2.png';
+    static const String icon3 = 'assets/images/icon3.png';
+    static const String icon4 = 'assets/images/icon4.png';
+
+
 }

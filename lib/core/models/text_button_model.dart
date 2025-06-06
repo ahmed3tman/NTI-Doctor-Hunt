@@ -9,7 +9,7 @@ class TextButtonModel extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        Navigator.pushNamed(context, route);
+        Navigator.pushReplacementNamed(context, route);
       },
       child: Text(text, style: TextStyle(fontSize: 15)),
     );

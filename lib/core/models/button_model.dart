@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class ButtonModel extends StatelessWidget {
   final String text;
-  final String route;
-  const ButtonModel({super.key, required this.text, required this.route});
+  final VoidCallback onPressed;
+  ButtonModel({super.key, required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,7 @@ class ButtonModel extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, route);
-          },
+          onPressed: onPressed,
           style: ElevatedButton.styleFrom(
             backgroundColor: MyColors.primaryGreen,
             padding: const EdgeInsets.symmetric(vertical: 10),

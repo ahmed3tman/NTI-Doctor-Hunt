@@ -52,7 +52,12 @@ class ThirdScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: height * 0.06),
-                  ButtonModel(text: "Get Started", route: "homeScreen"),
+                  ButtonModel(
+                    text: "Get Started",
+                    onPressed: () {
+                       Navigator.pushReplacementNamed(context, 'homeScreen');
+                    },
+                  ),
                   SizedBox(height: height * 0.02),
                   TextButtonModel(route: 'homeScreen', text: "Skip"),
                 ],

@@ -34,46 +34,40 @@ class _BottomNavBarModelState extends State<BottomNavBarModel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: BottomBar(
-        respectSafeArea: true,
-        width: 400,
-        borderRadius: BorderRadius.circular(30),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(30),
-          ),
-          alignment: Alignment.center,
-          height: 90,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: List.generate(icons.length, (index) {
-                final bool isSelected = selectedIndex == index;
-                return GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      selectedIndex = index;
-                    });
-                  },
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: isSelected
-                          ? MyColors.primaryGreen
-                          : Colors.transparent,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      icons[index],
-                      color: isSelected ? Colors.white : MyColors.primaryGreen,
-                      size: 30,
-                    ),
+        borderRadius: BorderRadius.circular(20),
+        barColor: Colors.white,
+        offset: 0, 
+        width: MediaQuery.of(context).size.width * 0.9, 
+
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: List.generate(icons.length, (index) {
+              final bool isSelected = selectedIndex == index;
+              return GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = index;
+                  });
+                },
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: isSelected
+                        ? MyColors.primaryGreen
+                        : Colors.transparent,
+                    shape: BoxShape.circle,
                   ),
-                );
-              }),
-            ),
+                  child: Icon(
+                    icons[index],
+                    color: isSelected ? Colors.white : MyColors.primaryGreen,
+                    size: 27,
+                  ),
+                ),
+              );
+            }),
           ),
         ),
         body: (context, controller) => pages[selectedIndex],

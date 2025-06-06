@@ -52,7 +52,12 @@ class SecondScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: height * 0.06),
-                  ButtonModel(text: "Get Started", route: 'thirdScreen'),
+                  ButtonModel(
+                    text: "Get Started",
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, 'thirdScreen');
+                    },
+                  ),
                   SizedBox(height: height * 0.02),
                   TextButtonModel(route: 'homeScreen', text: "Skip"),
                 ],
