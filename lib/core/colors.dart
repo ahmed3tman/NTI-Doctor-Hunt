@@ -14,11 +14,11 @@ class MyColors {
 }
 
 List<Color> gradientColors = [
-  MyColors.Blue,
-  MyColors.Green,
-  MyColors.Orange,
+  const Color.fromARGB(255, 114, 55, 250),
+  const Color.fromARGB(255, 24, 160, 103),
+  const Color.fromARGB(255, 229, 169, 79),
 
-  MyColors.Red,
+  const Color.fromARGB(255, 224, 81, 92),
   MyColors.Brown,
   MyColors.Orange,
 ];

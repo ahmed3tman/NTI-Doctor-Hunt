@@ -36,8 +36,8 @@ class _BottomNavBarModelState extends State<BottomNavBarModel> {
       body: BottomBar(
         borderRadius: BorderRadius.circular(20),
         barColor: Colors.white,
-        offset: 0, 
-        width: MediaQuery.of(context).size.width * 0.9, 
+        offset: 0,
+        width: MediaQuery.of(context).size.width * 0.9,
 
         child: Padding(
           padding: const EdgeInsets.all(15),
@@ -57,12 +57,12 @@ class _BottomNavBarModelState extends State<BottomNavBarModel> {
                   decoration: BoxDecoration(
                     color: isSelected
                         ? MyColors.primaryGreen
-                        : Colors.transparent,
+                        : const Color.fromARGB(0, 114, 108, 108),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     icons[index],
-                    color: isSelected ? Colors.white : MyColors.primaryGreen,
+                    color: isSelected ? Colors.white : MyColors.Grey,
                     size: 27,
                   ),
                 ),

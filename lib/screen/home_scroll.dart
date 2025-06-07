@@ -2,6 +2,8 @@ import 'package:doctor_hunt/core/assets.dart';
 import 'package:doctor_hunt/core/colors.dart';
 import 'package:doctor_hunt/core/models/list_icons.dart';
 import 'package:doctor_hunt/core/models/list_view_1.dart';
+import 'package:doctor_hunt/core/models/list_view_2.dart';
+import 'package:doctor_hunt/core/models/list_view_3.dart';
 import 'package:doctor_hunt/core/models/search_bar_model.dart';
 import 'package:doctor_hunt/core/text_style.dart';
 import 'package:flutter/material.dart';
@@ -124,18 +126,71 @@ class HomeScroll extends StatelessWidget {
 
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Text(
-                      'Popular Doctor',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                      ),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Popular Doctor',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+                        Spacer(),
+                        Text(
+                          'See all',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: MyColors.Grey,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          size: 12,
+                          color: MyColors.Grey,
+                        ),
+                      ],
                     ),
                   ),
                   SizedBox(height: 20),
 
-                  ListView1(),
+                  ListView2(),
+                  SizedBox(height: 20),
 
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Feature Doctor',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+
+                        Spacer(),
+                        Text(
+                          'See all',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: MyColors.Grey,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          size: 12,
+                          color: MyColors.Grey,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 20),
+
+
+                  ListView3(),
                   SizedBox(height: 500),
                 ],
               ),

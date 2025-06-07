@@ -8,6 +8,11 @@ class myImages {
   static const String docv1 = 'assets/images/docv1.png';
   static const String docv2 = 'assets/images/docv2.png';
   static const String docv3 = 'assets/images/docv3.png';
+  static const String docx1 = 'assets/images/docx1.png';
+  static const String docx2 = 'assets/images/docx2.png';
+  static const String docy1 = 'assets/images/docy1.png';
+  static const String docy2 = 'assets/images/docy2.png';
+  static const String docy3 = 'assets/images/docy3.png';
   static const String green1 = 'assets/images/green1.png';
   static const String green2 = 'assets/images/green2.png';
     static const String icon1 = 'assets/images/icon1.png';

@@ -21,14 +21,15 @@ class ListIcons extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: myImagesListt.length,
-        padding: EdgeInsets.symmetric(horizontal: 25),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         itemBuilder: (context, index) {
           return Container(
             width: 100,
-            margin: EdgeInsets.only(right: 10),
+            margin: EdgeInsets.only(right: 15),
             decoration: BoxDecoration(
+             
               color: gradientColors[index],
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Center(
               child: SizedBox(
