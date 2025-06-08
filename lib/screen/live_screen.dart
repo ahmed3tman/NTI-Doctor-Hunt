@@ -70,61 +70,67 @@ class LiveScreen extends StatelessWidget {
             ),
           ),
 
+          // Positioned(
+          //   child: UserInLiveModel(),
+          //   top: height * .4,
+          //   left: 0,
+          //   right: 0,
+          // ),
           Positioned(
-            child: UserInLiveModel(),
-            top: height * .4,
-            left: 0,
-            right: 0,
-          ),
-
-          Positioned(
-            top: height * .90,
+            bottom: 30,
             left: 20,
             right: 20,
-            child: Card(
-              elevation: 10,
-              shadowColor: Colors.black12,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(40),
-              ),
-              child: SizedBox(
-                width: width,
-                height: 70,
-                child: Center(
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.symmetric(vertical: 18),
-                      prefixIcon: Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          width: 50,
-                          padding: const EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            color: MyColors.primaryGreen,
-                            shape: BoxShape.circle,
+            child: Column(
+              children: [
+                UserInLiveModel(),
+                Card(
+                  elevation: 10,
+                  shadowColor: Colors.black12,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40),
+                  ),
+                  child: SizedBox(
+                    width: width,
+                    height: 60,
+                    child: Center(
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          contentPadding: const EdgeInsets.symmetric(
+                            vertical: 18,
                           ),
-                          child: Icon(
-                            Icons.comment_outlined,
-                            color: const Color.fromARGB(255, 255, 255, 255),
-                            size: 20,
+                          prefixIcon: Padding(
+                            padding: const EdgeInsets.only(left: 5),
+                            child: Container(
+                              width: 50,
+                              padding: const EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                color: MyColors.primaryGreen,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(
+                                Icons.comment_outlined,
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                                size: 20,
+                              ),
+                            ),
                           ),
+                          suffixIcon: Padding(
+                            padding: const EdgeInsets.only(right: 5),
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(Icons.face_outlined, size: 30),
+                              color: const Color.fromARGB(255, 110, 107, 107),
+                            ),
+                          ),
+                          border: InputBorder.none,
+                          hintText: '  Add a Comment......',
+                          hintStyle: const TextStyle(),
                         ),
                       ),
-                      suffixIcon: Padding(
-                        padding: const EdgeInsets.only(right: 10),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.face_outlined, size: 30),
-                          color: const Color.fromARGB(255, 110, 107, 107),
-                        ),
-                      ),
-                      border: InputBorder.none,
-                      hintText: '  Add a Comment......',
-                      hintStyle: const TextStyle(),
                     ),
                   ),
                 ),
-              ),
+              ],
             ),
           ),
         ],

@@ -10,7 +10,7 @@ class UserInLiveModel extends StatelessWidget {
     },
     {
       'image': myImages.user2,
-      'name': 'Handler Wack',
+      'name': 'Handler Wack',
       'comment': 'This is the largest directory',
     },
     {
@@ -29,12 +29,12 @@ class UserInLiveModel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 400,
       child: ListView.builder(
         scrollDirection: Axis.vertical,
         itemCount: ListUsers.length,
         itemBuilder: (context, index) => Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
           child: Row(
             children: [
               ClipRRect(
