@@ -19,6 +19,20 @@ class myImages {
     static const String icon2 = 'assets/images/icon2.png';
     static const String icon3 = 'assets/images/icon3.png';
     static const String icon4 = 'assets/images/icon4.png';
+      static const String doclive = 'assets/images/docLive.png';
+        static const String user1 = 'assets/images/user1.png';
+        static const String user2 = 'assets/images/user2.png';
+        static const String user3 = 'assets/images/user3.png';
+        static const String user4 = 'assets/images/user4.png';
 
 
 }
+
+
+class myIcons {
+  static const String back = 'assets/icons/back.png';
+
+
+
+}
+

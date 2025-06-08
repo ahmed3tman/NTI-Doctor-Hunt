@@ -119,7 +119,7 @@ class HomeScroll extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
 
-                  ListView1(),
+                  LiveList(),
                   SizedBox(height: 40),
                   ListIcons(),
                   SizedBox(height: 20),
@@ -188,7 +188,6 @@ class HomeScroll extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-
 
                   ListView3(),
                   SizedBox(height: 500),

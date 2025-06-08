@@ -14,6 +14,7 @@ analyzer:
     constant_identifier_names: ignore
     deprecated_member_use: ignore
     must_be_immutable: ignore
+    non_constant_identifier_names: ignore
     override_on_non_overriding_member: ignore
     prefer_const_constructors_in_immutables: ignore
     prefer_function_declarations_over_variables: ignore
