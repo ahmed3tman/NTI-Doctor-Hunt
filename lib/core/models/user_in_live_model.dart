@@ -34,7 +34,7 @@ class UserInLiveModel extends StatelessWidget {
         scrollDirection: Axis.vertical,
         itemCount: ListUsers.length,
         itemBuilder: (context, index) => Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+          padding: const EdgeInsets.symmetric(vertical: 15),
           child: Row(
             children: [
               ClipRRect(
@@ -61,11 +61,7 @@ class UserInLiveModel extends StatelessWidget {
                   ),
                   Text(
                     ListUsers[index]['comment'].toString(),
-                    style: TextStyle(
-                      fontSize: 14,
-                      //fontWeight: FontWeight,
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(fontSize: 14, color: Colors.white),
                   ),
                 ],
               ),

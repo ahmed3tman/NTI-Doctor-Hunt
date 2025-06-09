@@ -5,6 +5,7 @@ import 'package:doctor_hunt/core/models/list_view_1.dart';
 import 'package:doctor_hunt/core/models/list_view_2.dart';
 import 'package:doctor_hunt/core/models/list_view_3.dart';
 import 'package:doctor_hunt/core/models/search_bar_model.dart';
+import 'package:doctor_hunt/core/models/title_row.dart';
 import 'package:doctor_hunt/core/text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -26,8 +27,8 @@ class HomeScroll extends StatelessWidget {
                 height: 130,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
+                    topLeft: Radius.circular(50),
+                    topRight: Radius.circular(50),
                   ),
 
                   color: MyColors.primaryGreen,
@@ -106,71 +107,45 @@ class HomeScroll extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 20),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Text(
-                      'Live Doctors',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
+                  SizedBox(height: 15),
+                  TitleRow(title: 'Live Doctors', Widgett: SizedBox(height: 0)),
+                  SizedBox(height: 10),
+                  LiveList(),
+                  SizedBox(height: 30),
+                  ListIcons(),
+                  SizedBox(height: 15),
+                  TitleRow(
+                    title: 'Popular Doctor',
+                    Widgett: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, 'popularDoctor');
+                      },
+                      child: Row(
+                        children: [
+                          Text(
+                            'See all',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: MyColors.Grey,
+                            ),
+                          ),
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            size: 12,
+                            color: MyColors.Grey,
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
-
-                  LiveList(),
-                  SizedBox(height: 40),
-                  ListIcons(),
-                  SizedBox(height: 20),
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Row(
-                      children: [
-                        Text(
-                          'Popular Doctor',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-                        Spacer(),
-                        Text(
-                          'See all',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: MyColors.Grey,
-                          ),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          size: 12,
-                          color: MyColors.Grey,
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 20),
-
+                  SizedBox(height: 10),
                   ListView2(),
-                  SizedBox(height: 20),
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Row(
+                  SizedBox(height: 15),
+                  TitleRow(
+                    title: 'Feature Doctor',
+                    Widgett: Row(
                       children: [
-                        Text(
-                          'Feature Doctor',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-
-                        Spacer(),
                         Text(
                           'See all',
                           style: TextStyle(
@@ -187,10 +162,9 @@ class HomeScroll extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
-
+                  SizedBox(height: 10),
                   ListView3(),
-                  SizedBox(height: 500),
+                  SizedBox(height: 130),
                 ],
               ),
             ),

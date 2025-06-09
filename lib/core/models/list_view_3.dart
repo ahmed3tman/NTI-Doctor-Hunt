@@ -41,7 +41,6 @@ class ListView3 extends StatelessWidget {
       height: 170,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        //padding: EdgeInsets.only(left: 20),
         itemCount: doctors.length,
         itemBuilder: (context, index) {
           final doctor = doctors[index];

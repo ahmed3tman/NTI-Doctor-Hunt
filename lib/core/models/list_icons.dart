@@ -17,24 +17,27 @@ class ListIcons extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 110,
+      height: 105,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: myImagesListt.length,
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.only(left: 10),
         itemBuilder: (context, index) {
-          return Container(
-            width: 100,
-            margin: EdgeInsets.only(right: 15),
-            decoration: BoxDecoration(
-             
-              color: gradientColors[index],
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Center(
-              child: SizedBox(
-                height: 40,
-                child: Image.asset(myImagesListt[index], fit: BoxFit.cover),
+          return Card(
+            margin: EdgeInsets.only(left: 10, bottom: 5),
+            elevation: 3,
+            child: Container(
+              width: 90,
+
+              decoration: BoxDecoration(
+                color: gradientColors[index],
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Center(
+                child: SizedBox(
+                  height: 40,
+                  child: Image.asset(myImagesListt[index], fit: BoxFit.cover),
+                ),
               ),
             ),
           );
