@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/colors.dart';
+import 'package:doctor_hunt/core/icons.dart';
 import 'package:doctor_hunt/screen/books_screen.dart';
 import 'package:doctor_hunt/screen/chats_screen.dart';
 import 'package:doctor_hunt/screen/home_scroll.dart';
@@ -16,11 +17,11 @@ class BottomNavBarModel extends StatefulWidget {
 class _BottomNavBarModelState extends State<BottomNavBarModel> {
   int selectedIndex = 0;
 
-  final List<IconData> icons = [
-    Icons.home,
-    Icons.favorite,
-    Icons.book,
-    Icons.chat_bubble,
+  final List<String> icons = [
+    myIcons.home,
+    myIcons.love,
+    myIcons.book,
+    myIcons.message,
   ];
 
   final List<Widget> pages = [
@@ -34,6 +35,16 @@ class _BottomNavBarModelState extends State<BottomNavBarModel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: BottomBar(
+        barDecoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 0.1,
+              blurRadius: 40,
+            ),
+          ],
+        ),
+
         borderRadius: BorderRadius.circular(20),
         barColor: Colors.white,
         offset: 0,
@@ -60,10 +71,10 @@ class _BottomNavBarModelState extends State<BottomNavBarModel> {
                         : const Color.fromARGB(0, 114, 108, 108),
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(
+                  child: Image.asset(
                     icons[index],
                     color: isSelected ? Colors.white : MyColors.Grey,
-                    size: 27,
+                    scale: 22,
                   ),
                 ),
               );

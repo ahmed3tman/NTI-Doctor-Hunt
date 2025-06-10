@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:doctor_hunt/core/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -8,12 +8,12 @@ class ListIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> myImagesListt = [
-      myImages.icon1,
-      myImages.icon2,
-      myImages.icon3,
-      myImages.icon4,
-      myImages.icon1,
-      myImages.icon2,
+      myImages.photoIcon1,
+      myImages.photoIcon2,
+      myImages.photoIcon3,
+      myImages.photoIcon4,
+      myImages.photoIcon1,
+      myImages.photoIcon2,
     ];
 
     return SizedBox(
@@ -27,7 +27,7 @@ class ListIcons extends StatelessWidget {
             margin: EdgeInsets.only(left: 10, bottom: 5),
             elevation: 3,
             child: Container(
-              width: 90,
+              width: 88,
 
               decoration: BoxDecoration(
                 color: gradientColors[index],
@@ -35,7 +35,7 @@ class ListIcons extends StatelessWidget {
               ),
               child: Center(
                 child: SizedBox(
-                  height: 40,
+                  height: 105,
                   child: Image.asset(myImagesListt[index], fit: BoxFit.cover),
                 ),
               ),

@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:doctor_hunt/core/models/comment_field_model.dart';
 import 'package:doctor_hunt/core/models/top_bar_model.dart';
 import 'package:doctor_hunt/core/models/user_in_live_model.dart';

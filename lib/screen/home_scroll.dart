@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:doctor_hunt/core/colors.dart';
 import 'package:doctor_hunt/core/models/list_icons.dart';
 import 'package:doctor_hunt/core/models/list_view_1.dart';
@@ -140,7 +140,7 @@ class HomeScroll extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  ListView2(),
+                  ListView2(width: 200, hight: 300),
                   SizedBox(height: 15),
                   TitleRow(
                     title: 'Feature Doctor',

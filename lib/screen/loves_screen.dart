@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/icons.dart';
 import 'package:flutter/material.dart';
 
 class LovesScreen extends StatelessWidget {
@@ -5,6 +6,13 @@ class LovesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Loves Screen")));
+    return Scaffold(
+      body: Center(
+        child: Container(
+          height: 200,
+          child: Image.asset(myIcons.love, color: Colors.red),
+        ),
+      ),
+    );
   }
 }

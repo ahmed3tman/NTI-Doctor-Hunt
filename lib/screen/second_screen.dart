@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:doctor_hunt/core/models/button_model.dart';
 import 'package:doctor_hunt/core/models/text_button_model.dart';
 import 'package:doctor_hunt/core/text_style.dart';

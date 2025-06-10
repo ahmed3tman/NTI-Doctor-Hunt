@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:flutter/material.dart';
 
 class ListView3 extends StatelessWidget {

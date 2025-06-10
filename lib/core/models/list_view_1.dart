@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:flutter/material.dart';
 
 class LiveList extends StatelessWidget {
@@ -68,7 +68,7 @@ class LiveList extends StatelessWidget {
                       ),
                       height: 20,
                       width: 50,
-                      margin: EdgeInsets.only(top: 10, left: 80),
+                      margin: EdgeInsets.only(top: 10, left: 60),
                       decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(3),

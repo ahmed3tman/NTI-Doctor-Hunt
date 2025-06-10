@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/assets.dart';
+import 'package:doctor_hunt/core/images.dart';
 import 'package:doctor_hunt/core/models/button_model.dart';
 import 'package:doctor_hunt/core/models/text_button_model.dart';
 import 'package:doctor_hunt/core/text_style.dart';
@@ -52,9 +52,12 @@ class FirstScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: height * 0.06),
-                  ButtonModel(text: "Get Started", onPressed: () { 
-                    Navigator.pushReplacementNamed(context, 'SecondScreen');
-                   },),
+                  ButtonModel(
+                    text: "Get Started",
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, 'SecondScreen');
+                    },
+                  ),
                   SizedBox(height: height * 0.02),
                   TextButtonModel(route: 'homeScreen', text: "Skip"),
                 ],
