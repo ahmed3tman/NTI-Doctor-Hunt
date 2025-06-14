@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/colors.dart';
+import 'package:doctor_hunt/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class ButtonModel extends StatelessWidget {

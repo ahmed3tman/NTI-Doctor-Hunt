@@ -1,5 +1,5 @@
-import 'package:doctor_hunt/home.dart';
 import 'package:doctor_hunt/routs.dart';
+import 'package:doctor_hunt/views/home/home.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {

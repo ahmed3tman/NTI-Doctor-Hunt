@@ -1,12 +1,12 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/colors.dart';
-import 'package:doctor_hunt/core/models/list_icons.dart';
-import 'package:doctor_hunt/core/models/list_view_1.dart';
-import 'package:doctor_hunt/core/models/list_view_2.dart';
-import 'package:doctor_hunt/core/models/list_view_3.dart';
-import 'package:doctor_hunt/core/models/search_bar_model.dart';
-import 'package:doctor_hunt/core/models/title_row.dart';
-import 'package:doctor_hunt/core/text_style.dart';
+import 'package:doctor_hunt/core/theme/colors.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/core/theme/text_style.dart';
+import 'package:doctor_hunt/models/list_icons.dart';
+import 'package:doctor_hunt/models/list_view_1.dart';
+import 'package:doctor_hunt/models/list_view_2.dart';
+import 'package:doctor_hunt/models/list_view_3.dart';
+import 'package:doctor_hunt/models/title_row.dart';
+import 'package:doctor_hunt/widgets/app_text_field.dart';
 import 'package:flutter/material.dart';
 
 class HomeScroll extends StatelessWidget {
@@ -19,6 +19,7 @@ class HomeScroll extends StatelessWidget {
         Positioned.fill(
           child: Image.asset(myImages.background, fit: BoxFit.cover),
         ),
+
         CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
@@ -27,8 +28,8 @@ class HomeScroll extends StatelessWidget {
                 height: 130,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(50),
-                    topRight: Radius.circular(50),
+                    topLeft: Radius.circular(45),
+                    topRight: Radius.circular(45),
                   ),
 
                   color: MyColors.primaryGreen,
@@ -80,7 +81,7 @@ class HomeScroll extends StatelessWidget {
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 82,
+                      height: 85,
                       decoration: BoxDecoration(
                         color: MyColors.primaryGreen,
                         borderRadius: BorderRadius.only(
@@ -91,7 +92,7 @@ class HomeScroll extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
-                        top: 49,
+                        top: 50,
                         left: 15,
                         right: 15,
                       ),
@@ -180,11 +181,6 @@ class _SearchBarDelegate extends SliverPersistentHeaderDelegate {
   _SearchBarDelegate({required this.child});
 
   @override
-  double get minExtent => 110;
-  @override
-  double get maxExtent => 110;
-
-  @override
   Widget build(
     BuildContext context,
     double shrinkOffset,
@@ -192,6 +188,12 @@ class _SearchBarDelegate extends SliverPersistentHeaderDelegate {
   ) {
     return Material(color: Colors.transparent, child: child);
   }
+
+  @override
+  double get minExtent => 110;
+
+  @override
+  double get maxExtent => 115;
 
   @override
   bool shouldRebuild(covariant _SearchBarDelegate oldDelegate) {

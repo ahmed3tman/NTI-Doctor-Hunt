@@ -1,11 +1,11 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/models/button_model.dart';
-import 'package:doctor_hunt/core/models/text_button_model.dart';
-import 'package:doctor_hunt/core/text_style.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/core/theme/text_style.dart';
+import 'package:doctor_hunt/models/button_model.dart';
+import 'package:doctor_hunt/models/text_button_model.dart';
 import 'package:flutter/material.dart';
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
+class ThirdScreen extends StatelessWidget {
+  const ThirdScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,11 +36,11 @@ class FirstScreen extends StatelessWidget {
                   SizedBox(height: height * 0.1),
                   SizedBox(
                     height: height * 0.42,
-                    child: Image.asset(myImages.doc1, fit: BoxFit.contain),
+                    child: Image.asset(myImages.doc3, fit: BoxFit.contain),
                   ),
                   SizedBox(height: height * 0.06),
                   Text(
-                    "Find Trusted Doctors",
+                    "Easy Appointments",
                     style: myTextStyle(24, Colors.black),
                   ),
                   SizedBox(height: height * 0.015),
@@ -55,7 +55,7 @@ class FirstScreen extends StatelessWidget {
                   ButtonModel(
                     text: "Get Started",
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, 'SecondScreen');
+                      Navigator.pushReplacementNamed(context, 'homeScreen');
                     },
                   ),
                   SizedBox(height: height * 0.02),

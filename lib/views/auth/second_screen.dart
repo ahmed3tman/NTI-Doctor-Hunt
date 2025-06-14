@@ -1,7 +1,7 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/models/button_model.dart';
-import 'package:doctor_hunt/core/models/text_button_model.dart';
-import 'package:doctor_hunt/core/text_style.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/core/theme/text_style.dart';
+import 'package:doctor_hunt/models/button_model.dart';
+import 'package:doctor_hunt/models/text_button_model.dart';
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {

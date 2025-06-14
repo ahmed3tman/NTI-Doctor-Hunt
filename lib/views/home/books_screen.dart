@@ -5,6 +5,6 @@ class BooksScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Books Sreen")));
+    return Center(child: Text("Books screen"));
   }
 }

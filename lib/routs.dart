@@ -1,11 +1,11 @@
-import 'package:doctor_hunt/screen/first_screen.dart';
-import 'package:doctor_hunt/screen/home_screen.dart';
-import 'package:doctor_hunt/screen/live_screen.dart';
-import 'package:doctor_hunt/screen/popular_doctor_screen.dart';
-import 'package:doctor_hunt/screen/second_screen.dart';
-import 'package:doctor_hunt/screen/third_screen.dart';
+import 'package:doctor_hunt/views/auth/first_screen.dart';
+import 'package:doctor_hunt/views/auth/second_screen.dart';
+import 'package:doctor_hunt/views/home/home.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:doctor_hunt/views/auth/third_screen.dart';
+import 'package:doctor_hunt/views/home/home_screen.dart';
+import 'package:doctor_hunt/views/home/live_screen.dart';
+import 'package:doctor_hunt/views/home/popular_doctor_screen.dart';
 
 final Map<String, WidgetBuilder> appRoutes = {
   'home': (context) => const Home(),

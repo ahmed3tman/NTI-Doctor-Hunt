@@ -1,5 +1,6 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/colors.dart';
+
+import 'package:doctor_hunt/core/theme/colors.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
 import 'package:flutter/material.dart';
 
 class ListIcons extends StatelessWidget {

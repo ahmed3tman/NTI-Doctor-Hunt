@@ -1,9 +1,10 @@
-import 'package:doctor_hunt/core/colors.dart';
-import 'package:doctor_hunt/core/icons.dart';
-import 'package:doctor_hunt/screen/books_screen.dart';
-import 'package:doctor_hunt/screen/chats_screen.dart';
-import 'package:doctor_hunt/screen/home_scroll.dart';
-import 'package:doctor_hunt/screen/loves_screen.dart';
+
+import 'package:doctor_hunt/core/theme/colors.dart';
+import 'package:doctor_hunt/core/theme/icons.dart';
+import 'package:doctor_hunt/views/home/books_screen.dart';
+import 'package:doctor_hunt/views/home/chats_screen.dart';
+import 'package:doctor_hunt/views/home/home_scroll.dart';
+import 'package:doctor_hunt/views/home/loves_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_floating_bottom_bar/flutter_floating_bottom_bar.dart';
 

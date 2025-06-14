@@ -1,5 +1,5 @@
-import 'package:doctor_hunt/screen/splash_screen.dart';
 
+import 'package:doctor_hunt/views/auth/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {

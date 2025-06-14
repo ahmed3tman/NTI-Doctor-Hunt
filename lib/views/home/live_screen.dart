@@ -1,8 +1,9 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/models/comment_field_model.dart';
-import 'package:doctor_hunt/core/models/top_bar_model.dart';
-import 'package:doctor_hunt/core/models/user_in_live_model.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/models/comment_field_model.dart';
+import 'package:doctor_hunt/models/top_bar_model.dart';
+import 'package:doctor_hunt/models/user_in_live_model.dart';
 import 'package:flutter/material.dart';
+
 
 class LiveScreen extends StatelessWidget {
   const LiveScreen({super.key});

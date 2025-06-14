@@ -1,7 +1,8 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/models/popular_vertical_list.dart';
-import 'package:doctor_hunt/core/models/top_bar_model.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/models/popular_vertical_list.dart';
+import 'package:doctor_hunt/models/top_bar_model.dart';
 import 'package:flutter/material.dart';
+
 
 class PopularDoctorScreen extends StatelessWidget {
   const PopularDoctorScreen({super.key});

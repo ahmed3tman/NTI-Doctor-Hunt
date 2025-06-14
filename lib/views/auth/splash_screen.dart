@@ -1,7 +1,6 @@
-import 'package:doctor_hunt/core/images.dart';
-import 'package:doctor_hunt/core/text_style.dart';
+import 'package:doctor_hunt/core/theme/images.dart';
+import 'package:doctor_hunt/core/theme/text_style.dart';
 import 'package:flutter/material.dart';
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

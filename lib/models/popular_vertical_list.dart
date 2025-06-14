@@ -1,6 +1,7 @@
-import 'package:doctor_hunt/core/icons.dart';
-import 'package:doctor_hunt/core/models/list_view_2.dart';
-import 'package:doctor_hunt/core/models/title_row.dart';
+
+import 'package:doctor_hunt/core/theme/icons.dart';
+import 'package:doctor_hunt/models/list_view_2.dart';
+import 'package:doctor_hunt/models/title_row.dart';
 import 'package:flutter/material.dart';
 
 class PopularVerticalList extends StatelessWidget {
@@ -17,7 +18,7 @@ class PopularVerticalList extends StatelessWidget {
       'docImage': 'assets/images/docvp2.png',
       'docSpeciality': 'Dentist',
       'docRate': '4.2',
-      'numberViews': 80,
+      'numberViews': 680,
     },
     {
       'docName': 'Dr. Michael Johnson',
@@ -31,7 +32,7 @@ class PopularVerticalList extends StatelessWidget {
       'docImage': 'assets/images/docvp4.png',
       'docSpeciality': 'Gynecologist',
       'docRate': '4.3',
-      'numberViews': 90,
+      'numberViews': 940,
     },
     {
       'docName': 'Dr. John Doe',
@@ -45,7 +46,7 @@ class PopularVerticalList extends StatelessWidget {
       'docImage': 'assets/images/docvp2.png',
       'docSpeciality': 'Dentist',
       'docRate': '4.2',
-      'numberViews': 80,
+      'numberViews': 680,
     },
     {
       'docName': 'Dr. Michael Johnson',
@@ -59,14 +60,16 @@ class PopularVerticalList extends StatelessWidget {
       'docImage': 'assets/images/docvp4.png',
       'docSpeciality': 'Gynecologist',
       'docRate': '4.3',
-      'numberViews': 90,
+      'numberViews': 940,
     },
   ];
 
   @override
   Widget build(BuildContext context) {
     return SliverList(
-      delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
+      delegate: SliverChildBuilderDelegate(
+        childCount: docData.length,
+        (BuildContext context, int index) {
         if (index == 0) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 0),
@@ -180,7 +183,7 @@ class PopularVerticalList extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                SizedBox(width: 53),
+                                SizedBox(width: 45),
                                 Expanded(
                                   child: Row(
                                     children: [
@@ -214,6 +217,8 @@ class PopularVerticalList extends StatelessWidget {
                                     ],
                                   ),
                                 ),
+                                SizedBox(width: 5),
+
                               ],
                             ),
                           ],
@@ -226,7 +231,7 @@ class PopularVerticalList extends StatelessWidget {
             ),
           );
         }
-      }, childCount: docData.length),
+      }, ),
     );
   }
 }
